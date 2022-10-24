@@ -2,15 +2,20 @@ import type { NextPage } from "next";
 
 const Header: NextPage = () => {
 	return (
-		<header>
+		<header className="header">
 			<div className="empty-space"></div>
-			<div className="navbar flex">
-				<div className="brand flex">Name PlaceHolder</div>
-				<div className="navbar-items flex">
-					<div className="navbar-item">Item 1</div>
-					<div className="navbar-item">Item 2</div>
-				</div>
-			</div>
+			<nav className="navbar flex">
+				<nav className="navbar-items-left flex">
+					<a className="brand flex">Ming Yong</a>
+				</nav>
+				<nav className="navbar-items-right flex">
+					<a className="navbar-item">About Me</a>
+					<a className="navbar-item">Skills</a>
+					<a className="navbar-item">Experiences</a>
+					<a className="navbar-item">Projects</a>
+					<a className="navbar-item">Contact</a>
+				</nav>
+			</nav>
 		</header>
 	);
 };

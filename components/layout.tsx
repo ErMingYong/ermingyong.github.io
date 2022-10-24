@@ -7,7 +7,7 @@ export const siteTitle = "MingYong";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<div>
+		<div className="layout">
 			<Head>
 				<link ref="icon" href="/../public/my-icon.png" />
 				<meta name="description" content="Ming Yong portfolio" />

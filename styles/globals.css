@@ -22,12 +22,11 @@ a {
 	}
 	body {
 		color: white;
-		background: black;
+		background: #7c868c;
 	}
 }
 
 .empty-space {
-	width: 100%;
 	padding-top: 3rem;
 }
 
@@ -36,36 +35,49 @@ a {
 	flex: 1;
 }
 
-.footer {
-	padding: 2rem 0rem 0rem 2rem;
-	border-top: 1px solid #eaeaea;
-	justify-content: center;
-	align-items: center;
+.header {
+	/* padding: 1.5rem 0rem 0rem 1.5rem; */
+	padding: 0rem 6rem 0rem 6rem;
 }
 
-.footer a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-grow: 1;
+main {
+	padding: 0rem 6rem 0rem 6rem;
+}
+
+.footer {
+	/* padding: 1.5rem 0rem 0rem 1.5rem; */
+	padding: 0rem 6rem 0rem 6rem;
+	border-top: 1px solid #eaeaea;
 }
 
 .navbar {
-	width: 100%;
+	display: flex;
 	padding: 1rem;
-	padding-top: 3rem;
 	font-size: 1.5rem;
 }
 
 .brand {
-	width: 10rem;
+	width: 12rem;
+	font-weight: bolder;
 }
 
-.navbar-items {
+.navbar-items-left {
+	justify-content: left;
+	align-items: left;
+	width: 12rem;
+}
+
+.navbar-items-right {
 	justify-content: right;
 	align-items: right;
+	width: 11rem;
 }
 
 .navbar-item {
-	padding: 0rem 1rem 1rem 0rem;
+	padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.container {
+	padding: 1rem 1rem;
+	justify-content: center;
 }
