@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 export const siteTitle = "MingYong";
 
-export default function Layout(children: React.ReactNode) {
+export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<div>
 			<Head>
@@ -14,6 +14,7 @@ export default function Layout(children: React.ReactNode) {
 				<meta name="og:title" content={siteTitle} />
 			</Head>
 			<Header />
+			<main>{children}</main>
 			<Footer />
 		</div>
 	);

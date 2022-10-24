@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 const Header: NextPage = () => {
-	<header>This is a header</header>;
+	return <header>This is a Header</header>;
 };
 
 export default Header;
