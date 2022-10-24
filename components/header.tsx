@@ -9,7 +9,7 @@ const Header: NextPage = () => {
 					<a className="brand flex">Ming Yong</a>
 				</nav>
 				<nav className="navbar-items-right flex">
-					<a className="navbar-item">About Me</a>
+					<a className="navbar-item">About</a>
 					<a className="navbar-item">Skills</a>
 					<a className="navbar-item">Experiences</a>
 					<a className="navbar-item">Projects</a>

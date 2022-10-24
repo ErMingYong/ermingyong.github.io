@@ -36,8 +36,8 @@ a {
 }
 
 .header {
-	/* padding: 1.5rem 0rem 0rem 1.5rem; */
 	padding: 0rem 6rem 0rem 6rem;
+	border-bottom: 1px solid #eaeaea;
 }
 
 main {
@@ -45,7 +45,6 @@ main {
 }
 
 .footer {
-	/* padding: 1.5rem 0rem 0rem 1.5rem; */
 	padding: 0rem 6rem 0rem 6rem;
 	border-top: 1px solid #eaeaea;
 }
@@ -74,7 +73,7 @@ main {
 }
 
 .navbar-item {
-	padding: 0rem 0.5rem 0rem 0.5rem;
+	padding: 0rem 0.8rem 0rem 0.8rem;
 }
 
 .container {
