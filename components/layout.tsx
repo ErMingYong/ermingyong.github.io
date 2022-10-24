@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import Header from "./header";
+
 export const siteTitle = "MingYong";
 
 export default function Layout(children: React.ReactNode) {
@@ -10,6 +12,7 @@ export default function Layout(children: React.ReactNode) {
 				<meta name="description" content="Ming Yong portfolio" />
 				<meta name="og:title" content={siteTitle} />
 			</Head>
+			<Header />
 		</div>
 	);
 }
