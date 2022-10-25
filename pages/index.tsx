@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Image from "next/image";
 
-export const siteTitle = "Ming Yong";
+export const siteTitle = "Welcome to MY Portfolio!";
 export const name = "Er Ming Yong";
 export const selfIntroduction = "Hi, my name is Ming Yong!";
 export const selfDescription =
@@ -14,18 +14,10 @@ export default function Home() {
 			<Head>
 				<title>{siteTitle}</title>
 				<meta name="description" content="Ming Yong Portfolio" />
-				<link rel="icon" href="/../public/my-icon.png" />
+				<link rel="icon" href="/my-icon.ico" />
 			</Head>
 			<div className={styles.container}>
 				<div className={styles.card}>
-					{/* <Image
-						priority
-						src="/../public/my-icon.png"
-						className={styles.borderCircle}
-						height={144}
-						width={144}
-						alt="Profile Picture"
-					/> */}
 					<Image
 						priority
 						src="/../public/favicon.ico"

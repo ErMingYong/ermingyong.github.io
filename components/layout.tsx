@@ -10,8 +10,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 		<div className="layout">
 			<Head>
 				<title>{siteTitle}</title>
-				<link ref="icon" href="/../public/my-icon.png" />
-				<meta name="description" content="Ming Yong Information" />
+				<link rel="icon" href="/my-icon.ico" type="image/x-icon" />
+				<meta name="description" content="Ming Yong's Description" />
 				<meta name="og:title" content={siteTitle} />
 			</Head>
 			<Header />
