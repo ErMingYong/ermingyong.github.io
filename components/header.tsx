@@ -6,14 +6,26 @@ const Header: NextPage = () => {
 			<div className="empty-space"></div>
 			<nav className="navbar flex">
 				<nav className="navbar-items-left flex">
-					<a className="brand flex">Ming Yong</a>
+					<a className="brand flex" href="/about">
+						Ming Yong
+					</a>
 				</nav>
 				<nav className="navbar-items-right flex">
-					<a className="navbar-item">About</a>
-					<a className="navbar-item">Skills</a>
-					<a className="navbar-item">Experiences</a>
-					<a className="navbar-item">Projects</a>
-					<a className="navbar-item">Contact</a>
+					<a className="navbar-item" href="/about/me">
+						About
+					</a>
+					<a className="navbar-item" href="/about/skills">
+						Skills
+					</a>
+					<a className="navbar-item" href="/about/experiences">
+						Experiences
+					</a>
+					<a className="navbar-item" href="/about/projects">
+						Projects
+					</a>
+					<a className="navbar-item" href="/about/contact">
+						Contact
+					</a>
 				</nav>
 			</nav>
 		</header>
