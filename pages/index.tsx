@@ -20,10 +20,10 @@ export default function Home() {
 				<div className={styles.card}>
 					<Image
 						priority
-						src="/favicon.ico"
+						src="/profile.jpg"
 						className={styles.borderCircle}
-						height={144}
-						width={144}
+						height={200}
+						width={200}
 						alt="Profile Picture"
 					/>
 					<br />
