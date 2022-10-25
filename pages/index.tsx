@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Image from "next/image";
+import profileIcon from "../public/favicon.ico";
 
 export const siteTitle = "Welcome to MY Portfolio!";
 export const name = "Er Ming Yong";
@@ -20,7 +21,7 @@ export default function Home() {
 				<div className={styles.card}>
 					<Image
 						priority
-						src="/../public/favicon.ico"
+						src={profileIcon}
 						className={styles.borderCircle}
 						height={144}
 						width={144}
