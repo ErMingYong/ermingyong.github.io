@@ -34,6 +34,28 @@ import FigmaIcon from "../../images/figma.svg";
 import LinuxIcon from "../../images/linux.svg";
 import UbuntuIcon from "../../images/ubuntu.svg";
 import GoogleAnalyticsIcon from "../../images/analytics.svg";
+import AWSWebServicesIcon from "../../images/amazonwebservices.svg";
+import AWSACMIcon from "../../images/aws/awscertificatemanager.svg";
+import AWSCFNIcon from "../../images/aws/cloudformation.svg";
+import AWSCloudTrailIcon from "../../images/aws/cloudtrail.svg";
+import AWSCloudWatchIcon from "../../images/aws/cloudwatch.svg";
+import AWSCodeArtifactIcon from "../../images/aws/codeartifact.svg";
+import AWSCodeBuildIcon from "../../images/aws/codebuild.svg";
+import AWSCodeDeployIcon from "../../images/aws/codedeploy.svg";
+import AWSCodePipelineIcon from "../../images/aws/codepipeline.svg";
+import AWSDynamoDBIcon from "../../images/aws/dynamodb.svg";
+import AWSEC2Icon from "../../images/aws/elasticcomputecloud.svg";
+import AWSECRIcon from "../../images/aws/elasticcontainerregistry.svg";
+import AWSECSIcon from "../../images/aws/elasticcontainerservice.svg";
+import AWSECSFargateIcon from "../../images/aws/fargate.svg";
+import AWSIAMIcon from "../../images/aws/identityandaccessmanagement.svg";
+import AWSKMSIcon from "../../images/aws/keymanagementservice.svg";
+import AWSLambdaIcon from "../../images/aws/lambda.svg";
+import AWSLoadBalancerIcon from "../../images/aws/loadbalancer.svg";
+import AWSRDSIcon from "../../images/aws/rds.svg";
+import AWSSecretsManagerIcon from "../../images/aws/secretsmanager.svg";
+import AWSSNSIcon from "../../images/aws/simplenotificationservice.svg";
+import AWSS3Icon from "../../images/aws/simplestorageservice.svg";
 
 // below method renders the output of the page
 // copy and refactor <div className="card"></div> component to place more details or experiences
@@ -89,11 +111,23 @@ const Skills: NextPage = () => {
 				</div>
 				<div className="card">
 					<h1>Database</h1>
-					<p>{"> "} MySQL, PostgreSQL</p>
+					<p>{"> "} MySQL, PostgreSQL, AWS DynamoDB, AWS RDS</p>
 					<Image src={MySQLIcon} alt="MySQL" height="100" width="100" />
 					<Image
 						src={PostgreSQLIcon}
 						alt="PostgreSQL"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSDynamoDBIcon}
+						alt="AWS DynamoDB"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSRDSIcon}
+						alt="AWS Relational Database"
 						height="100"
 						width="100"
 					/>
@@ -127,6 +161,141 @@ const Skills: NextPage = () => {
 					<Image
 						src={GoogleAnalyticsIcon}
 						alt="Google Analytics"
+						height="100"
+						width="100"
+					/>
+				</div>
+				<div className="card">
+					<h1>Suite of AWS Platforms and Services</h1>
+					<Image
+						src={AWSWebServicesIcon}
+						alt="Amazon Web Services"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSS3Icon}
+						alt="AWS Simple Storage Service"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSLoadBalancerIcon}
+						alt="AWS Loab Balancer"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSLambdaIcon}
+						alt="AWS Lambda"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSEC2Icon}
+						alt="AWS Elastic Compute Cloud"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSECRIcon}
+						alt="AWS Elastice Container Registry"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSECSIcon}
+						alt="AWS Elastic Container Service"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSECSFargateIcon}
+						alt="AWS ECS Fargate"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCodeArtifactIcon}
+						alt="AWS CodeArtifact"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCodeBuildIcon}
+						alt="AWS CodeBuild"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCodeDeployIcon}
+						alt="AWS CodeDeploy"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCodePipelineIcon}
+						alt="AWS CodeDeploy"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSDynamoDBIcon}
+						alt="AWS DynamoDB"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSRDSIcon}
+						alt="AWS Relational Database"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCloudWatchIcon}
+						alt="AWS CloudWatch"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCFNIcon}
+						alt="AWS CloudFormation"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSCloudTrailIcon}
+						alt="AWS CloudTrail"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSSNSIcon}
+						alt="AWS Simple Notification Service"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSIAMIcon}
+						alt="AWS Identity and Access Management"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSACMIcon}
+						alt="Amazon Certificate Manager"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSKMSIcon}
+						alt="AWS Key Management Service"
+						height="100"
+						width="100"
+					/>
+					<Image
+						src={AWSSecretsManagerIcon}
+						alt="AWS Secrets Manager"
 						height="100"
 						width="100"
 					/>
