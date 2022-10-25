@@ -5,12 +5,23 @@ const Footer: NextPage = () => {
 		<footer className="footer">
 			<nav className="navbar flex">
 				<nav className="navbar-items-left flex">
-					<a className="brand flex">Ming Yong</a>
+					<a className="brand flex" href="/about">
+						Ming Yong
+					</a>
 				</nav>
 				<nav className="navbar-items-right flex">
-					<a className="navbar-item">GitHub</a>
-					<a className="navbar-item">LinkedIn</a>
-					<a className="navbar-item">Email</a>
+					<a
+						className="navbar-item"
+						href="https://github.com/NIL-99?tab=repositories"
+					>
+						GitHub
+					</a>
+					<a
+						className="navbar-item"
+						href="https://www.linkedin.com/in/er-ming-yong/"
+					>
+						LinkedIn
+					</a>
 				</nav>
 			</nav>
 		</footer>

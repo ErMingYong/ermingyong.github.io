@@ -18,7 +18,7 @@ const Test: NextPage = () => {
 			<div className="empty-space"></div>
 			<div className="container" id="introduction">
 				<div className="card">
-					<h1 className="cardTitle">{introductionTitle}</h1>
+					<h1 className="cardTitle">{introductionTitle} 👨‍💻</h1>
 					<p className="cardText">{introductionText}</p>
 				</div>
 			</div>

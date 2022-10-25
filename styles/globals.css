@@ -77,9 +77,20 @@ main {
 	padding: 0rem 0.8rem 0rem 0.8rem;
 }
 
+.navbar-item:hover {
+	text-decoration: underline;
+	transform: scale(1.3);
+}
+
 .container {
 	padding: 1rem 1rem 10rem 1rem;
 	justify-content: center;
+}
+
+.card {
+	margin: 2rem 0rem 2rem 0rem;
+	line-height: 1;
+	font-size: 1rem;
 }
 
 .cardTitle {
@@ -92,9 +103,25 @@ main {
 	font-size: 2rem;
 	line-height: 1.3;
 	width: 50rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 .contact {
 	width: 80rem;
+}
+
+.error {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.link:hover {
+	transform: scale(1.3);
 }
