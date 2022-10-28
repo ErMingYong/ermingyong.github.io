@@ -15,30 +15,28 @@ export const location = "Singapore, Singapore";
 const Contact: NextPage = () => {
 	return (
 		<Layout>
-			<div className="container">
-				<div className="card">
-					<h1 className="cardTitle">{contactTitle} 📲</h1>
-					<br />
-					<p className="cardText contact">
-						📩 {contactText1}
-						{emailAddress}
-					</p>
-					<p className="cardText contact">
-						🔗 {contactText2}
-						<a href="https://www.linkedin.com/in/er-ming-yong/">
-							<u>{linkedInLink}</u>
-						</a>
-					</p>
-					<p className="cardText contact">
-						👨‍💻 {contactText3}
-						{githubLink}
-					</p>
-					<br />
-					<p className="cardText contact">
-						📍 {contactText4}
-						{location}
-					</p>
-				</div>
+			<div>
+				<h1 className="cardTitle">{contactTitle} 📲</h1>
+				<br />
+				<p className="cardText contact">
+					📩 {contactText1}
+					{emailAddress}
+				</p>
+				<p className="cardText contact">
+					🔗 {contactText2}
+					<a href="https://www.linkedin.com/in/er-ming-yong/">
+						<u>{linkedInLink}</u>
+					</a>
+				</p>
+				<p className="cardText contact">
+					👨‍💻 {contactText3}
+					{githubLink}
+				</p>
+				<br />
+				<p className="cardText contact">
+					📍 {contactText4}
+					{location}
+				</p>
 			</div>
 		</Layout>
 	);

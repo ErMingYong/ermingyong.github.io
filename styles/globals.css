@@ -14,6 +14,7 @@ a {
 * {
 	box-sizing: border-box;
 	font-family: monospace;
+	color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,10 +39,6 @@ a {
 .header {
 	padding: 0rem 10rem 0rem 10rem;
 	border-bottom: 1px solid #eaeaea;
-}
-
-main {
-	padding: 0rem 10rem 0rem 10rem;
 }
 
 .footer {

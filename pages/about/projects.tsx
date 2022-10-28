@@ -43,106 +43,104 @@ export const project4GitHubLink1 = "https://github.com/NIL-99/portfolio";
 const Projects: NextPage = () => {
 	return (
 		<Layout>
-			<div className="container">
-				<div className="card">
-					<h1 className="cardTitle">Projects 🧪📝🥼</h1>
-				</div>
-				<br />
-				<div className="card">
-					<h2>{project1Duration}</h2>
-					<h1>
-						{project1Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
-							National University of Singapore
-						</a>
-					</h1>
-					<p>
-						{">"} {project1Achievement1}
-					</p>
-					<a className="link" href={project1GitHubLink1}>
-						{project1GitHubLink1}
+			<div>
+				<h1 className="cardTitle">Projects 🧪📝🥼</h1>
+			</div>
+			<br />
+			<div className="card">
+				<h2>{project1Duration}</h2>
+				<h1>
+					{project1Description} @{" "}
+					<a className="link" href="https://www.comp.nus.edu.sg/">
+						National University of Singapore
 					</a>
-					<p>Technology Stack: ReactJS, HTML5, CSS, Firebase</p>
-					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
-					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
-					<Image src={CssIcon} alt="CSS" height="40" width="40" />
-					<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
-				</div>
-				<br />
-				<div className="card">
-					<h2>{project2Duration}</h2>
-					<h1>
-						{project2Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
-							National University of Singapore
-						</a>
-					</h1>
-					<p>
-						{">"} {project2Achievement1}
-					</p>
-					<a className="link" href={project2GitHubLink1}>
-						{project2GitHubLink1}
+				</h1>
+				<p>
+					{">"} {project1Achievement1}
+				</p>
+				<a className="link" href={project1GitHubLink1}>
+					{project1GitHubLink1}
+				</a>
+				<p>Technology Stack: ReactJS, HTML5, CSS, Firebase</p>
+				<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
+				<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
+				<Image src={CssIcon} alt="CSS" height="40" width="40" />
+				<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
+			</div>
+			<br />
+			<div className="card">
+				<h2>{project2Duration}</h2>
+				<h1>
+					{project2Description} @{" "}
+					<a className="link" href="https://www.comp.nus.edu.sg/">
+						National University of Singapore
 					</a>
-					<p>Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish</p>
-					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
-					<Image src={JQueryIcon} alt="iQuery" height="40" width="40" />
-					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
-				</div>
-				<br />
-				<div className="card">
-					<h2>{project3Duration}</h2>
-					<h1>
-						{project3Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
-							National University of Singapore
-						</a>
-					</h1>
-					<p>
-						{">"} {project3Achievement1}
-					</p>
-					<p>
-						Frontend:
-						<a className="link" href={project3GitHubLink1}>
-							{project3GitHubLink1}
-						</a>
-					</p>
-					Backend:
-					<a className="link" href={project3GitHubLink2}>
-						{project3GitHubLink2}
+				</h1>
+				<p>
+					{">"} {project2Achievement1}
+				</p>
+				<a className="link" href={project2GitHubLink1}>
+					{project2GitHubLink1}
+				</a>
+				<p>Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish</p>
+				<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
+				<Image src={JQueryIcon} alt="iQuery" height="40" width="40" />
+				<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
+			</div>
+			<br />
+			<div className="card">
+				<h2>{project3Duration}</h2>
+				<h1>
+					{project3Description} @{" "}
+					<a className="link" href="https://www.comp.nus.edu.sg/">
+						National University of Singapore
 					</a>
-					<p>
-						Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish, HTML5, CSS,
-						AngularJS
-					</p>
-					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
-					<Image src={JQueryIcon} alt="jQuery" height="40" width="40" />
-					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
-					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
-					<Image src={CssIcon} alt="CSS" height="40" width="40" />
-					<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
-				</div>
-				<br />
-				<div className="card">
-					<h2>{project4Duration}</h2>
-					<h1>
-						{project4Description} @{" "}
-						<a className="link" href="/">
-							Myself
-						</a>
-					</h1>
-					<p>
-						{">"} Frontend:
-						<a className="link" href={project4GitHubLink1}>
-							{project4GitHubLink1}
-						</a>
-					</p>
-					<p>Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS</p>
-					<Image src={NextJSIcon} alt="NextJS" height="40" width="40" />
-					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
-					<Image src={TypeScriptIcon} alt="TypeScript" height="40" width="40" />
-					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
-					<Image src={CssIcon} alt="CSS" height="40" width="40" />
-				</div>
+				</h1>
+				<p>
+					{">"} {project3Achievement1}
+				</p>
+				<p>
+					Frontend:
+					<a className="link" href={project3GitHubLink1}>
+						{project3GitHubLink1}
+					</a>
+				</p>
+				Backend:
+				<a className="link" href={project3GitHubLink2}>
+					{project3GitHubLink2}
+				</a>
+				<p>
+					Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish, HTML5, CSS,
+					AngularJS
+				</p>
+				<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
+				<Image src={JQueryIcon} alt="jQuery" height="40" width="40" />
+				<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
+				<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
+				<Image src={CssIcon} alt="CSS" height="40" width="40" />
+				<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
+			</div>
+			<br />
+			<div className="card">
+				<h2>{project4Duration}</h2>
+				<h1>
+					{project4Description} @{" "}
+					<a className="link" href="/">
+						Myself
+					</a>
+				</h1>
+				<p>
+					{">"} Frontend:
+					<a className="link" href={project4GitHubLink1}>
+						{project4GitHubLink1}
+					</a>
+				</p>
+				<p>Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS</p>
+				<Image src={NextJSIcon} alt="NextJS" height="40" width="40" />
+				<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
+				<Image src={TypeScriptIcon} alt="TypeScript" height="40" width="40" />
+				<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
+				<Image src={CssIcon} alt="CSS" height="40" width="40" />
 			</div>
 		</Layout>
 	);

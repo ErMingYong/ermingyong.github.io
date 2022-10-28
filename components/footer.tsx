@@ -1,31 +1,72 @@
-import type { NextPage } from "next";
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-const Footer: NextPage = () => {
+import Link from "next/link";
+
+export default function BottomAppBar() {
 	return (
-		<footer className="footer">
-			<nav className="navbar flex">
-				<nav className="navbar-items-left flex">
-					<a className="brand flex" href="/about">
-						Ming Yong
-					</a>
-				</nav>
-				<nav className="navbar-items-right flex">
-					<a
-						className="navbar-item"
-						href="https://github.com/NIL-99?tab=repositories"
+		<React.Fragment>
+			<CssBaseline />
+			<AppBar
+				position="fixed"
+				color="primary"
+				sx={{
+					top: "auto",
+					bottom: 0,
+					background: "#395d74",
+					boxShadow: "none",
+					borderTop: "1px solid #eaeaea",
+				}}
+			>
+				<Toolbar>
+					<Typography
+						variant="h6"
+						sx={{
+							flexGrow: 1,
+							display: { xs: "none", sm: "block" },
+							fontFamily: "monospace",
+							fontWeight: "bold",
+							fontSize: "1.5rem",
+							marginLeft: "4rem",
+						}}
 					>
-						GitHub
-					</a>
-					<a
-						className="navbar-item"
-						href="https://www.linkedin.com/in/er-ming-yong/"
+						<Link href="/about">MING YONG</Link>
+					</Typography>
+					<Box
+						sx={{ display: { xs: "none", sm: "block" }, marginRight: "4rem" }}
 					>
-						LinkedIn
-					</a>
-				</nav>
-			</nav>
-		</footer>
+						<Button
+							key="GitHub"
+							sx={{
+								color: "#fff",
+								fontFamily: "monospace",
+								fontSize: "1.3rem",
+							}}
+						>
+							<Link href="https://github.com/NIL-99?tab=repositories">
+								GitHub
+							</Link>
+						</Button>
+						<Button
+							key="LinkedIn"
+							sx={{
+								color: "#fff",
+								fontFamily: "monospace",
+								fontSize: "1.3rem",
+							}}
+						>
+							<Link href="https://www.linkedin.com/in/er-ming-yong/">
+								LinkedIn
+							</Link>
+						</Button>
+					</Box>
+				</Toolbar>
+			</AppBar>
+		</React.Fragment>
 	);
-};
-
-export default Footer;
+}

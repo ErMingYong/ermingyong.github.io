@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Toolbar from "@mui/material/Toolbar";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -15,7 +18,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				<meta name="og:title" content={siteTitle} />
 			</Head>
 			<Header />
-			<main>{children}</main>
+			<main>
+				<Box component="main" sx={{ p: 3 }}>
+					<Toolbar />
+					<Card
+						sx={{
+							background: "#395d74",
+							border: "none",
+							boxShadow: "none",
+							margin: "1rem 4rem",
+						}}
+					>
+						<h1>{children}</h1>
+					</Card>
+				</Box>
+			</main>
 			<Footer />
 		</div>
 	);

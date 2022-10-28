@@ -14,21 +14,19 @@ export const specialization2 = "Intelligent Systems Solutioning";
 const Me: NextPage = () => {
 	return (
 		<Layout>
-			<div className="container">
-				<div className="card">
-					<h1 className="cardTitle">{aboutTitle} ❓</h1>
-					<p className="cardText">
-						I am current reading 🎓{" "}
-						<b>
-							<u>{academic}</u>
-						</b>
-						, with the intention of specializing into {specialization1} and{" "}
-						{specialization2}
-					</p>
-					<p className="cardText">
-						<b>{aboutText2}</b>
-					</p>
-				</div>
+			<div>
+				<h1 className="cardTitle">{aboutTitle} ❓</h1>
+				<p className="cardText">
+					I am current reading 🎓{" "}
+					<b>
+						<u>{academic}</u>
+					</b>
+					, with the intention of specializing into {specialization1} and{" "}
+					{specialization2}
+				</p>
+				<p className="cardText">
+					<b>{aboutText2}</b>
+				</p>
 			</div>
 		</Layout>
 	);
