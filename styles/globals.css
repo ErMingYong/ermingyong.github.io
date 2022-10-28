@@ -28,6 +28,10 @@ a {
 	}
 }
 
+main {
+	background-color: #395d74;
+}
+
 .empty-space {
 	padding-top: 3rem;
 	background-color: #395d74;
