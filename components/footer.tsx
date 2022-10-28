@@ -47,6 +47,7 @@ export default function BottomAppBar() {
 								fontFamily: "monospace",
 								fontSize: "1.3rem",
 							}}
+							className="navbar-items link"
 						>
 							<Link href="https://github.com/NIL-99?tab=repositories">
 								GitHub
@@ -59,6 +60,7 @@ export default function BottomAppBar() {
 								fontFamily: "monospace",
 								fontSize: "1.3rem",
 							}}
+							className="navbar-items link"
 						>
 							<Link href="https://www.linkedin.com/in/er-ming-yong/">
 								LinkedIn

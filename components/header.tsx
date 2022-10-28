@@ -98,6 +98,7 @@ export default function Header() {
 									fontFamily: "monospace",
 									fontSize: "1.3rem",
 								}}
+								className="navbar-items link"
 							>
 								<Link className="navbar-item" href={"/about/" + String(item)}>
 									{item === "me" ? "About" : item}
