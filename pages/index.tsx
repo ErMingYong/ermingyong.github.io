@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Image from "next/image";
+import profilePic from "../public/profile.jpg";
 
 export const siteTitle = "Welcome to MY Portfolio!";
 export const name = "Er Ming Yong";
@@ -20,11 +21,12 @@ export default function Home() {
 				<div className={styles.card}>
 					<Image
 						priority
-						src="/profile.jpg"
+						src={profilePic}
 						className={styles.borderCircle}
 						height={200}
 						width={200}
 						alt="Profile Picture"
+						placeholder="blur"
 					/>
 					<br />
 				</div>
