@@ -10,7 +10,7 @@ const About: NextPage = () => {
 	return (
 		<Layout>
 			<div className="empty-space"></div>
-			<div>
+			<div className="card">
 				<h1 className="cardTitle">{introductionTitle} 👨‍💻</h1>
 				<p className="cardText">{introductionText}</p>
 			</div>

@@ -54,177 +54,184 @@ const experience1Achievement4 =
 const Experiences: NextPage = () => {
 	return (
 		<Layout>
-			<div>
-				<h1 className="cardTitle">Professional Experience 💻🖥️👨‍💻</h1>
-			</div>
-			<br />
 			<div className="card">
-				<h2>May 2022 - Oct 2022</h2>
-				<h1>
-					{experience1Position} @{" "}
-					<a className="link" href="https://www.autodesk.com.sg/">
-						Autodesk Asia (Singapore)
-					</a>
-				</h1>
-				<h2>{experience1CompanyMission}</h2>
-				<p>
-					{">"} {experience1Achievement1}
-				</p>
-				<p>
-					{">"} {experience1Achievement2}
-				</p>
-				<p>
-					{">"} {experience1Achievement3}
-				</p>
-				<p>
-					{">"} {experience1Achievement4}
-				</p>
-				<p>Technology Stack:</p>
-				<p>- Frontend: HTML5, CSS, JS</p>
-				<p>- Backend: Python, Flask, Slack API</p>
-				<p>- Database: PostgreSQL, AWS RDS, AWS DynamoDB</p>
-				<p>- Build: Docker, Jenkins</p>
-				<p>- Test: PyTest</p>
-				<p>- Deployment: AWS EC2, AWS ECS Fargate</p>
-				<p>- Network and Security: AWS Load Balancer, AWS Security Group</p>
-				<p>
-					- Infrastructure: AWS CloudFormation, AWS CodePipeline, AWS Simple
-					Notification Service
-				</p>
-				<p>Suite of Non-AWS Platforms and Services: </p>
-				<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
-				<Image src={CssIcon} alt="CSS" height="40" width="40" />
-				<Image src={JSIcon} alt="JS" height="40" width="40" />
-				<Image src={PythonIcon} alt="Python" height="40" width="40" />
-				<Image src={FlaskIcon} alt="Flask" height="40" width="40" />
-				<Image src={SlackIcon} alt="Slack API" height="40" width="40" />
-				<Image src={PostgreSQLIcon} alt="PostgreSQL" height="40" width="40" />
-				<Image src={DockerIcon} alt="Docker" height="40" width="40" />
-				<Image src={JenkinsIcon} alt="Jenkins" height="40" width="40" />
-				<Image src={PyTestIcon} alt="PyTest" height="40" width="40" />
-				<p>Suite of AWS Platforms and Services: </p>
-				<Image src={AWSIcon} alt="Amazon Web Services" height="40" width="40" />
-				<Image
-					src={AWSACMIcon}
-					alt="Amazon Certificate Manager"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCFNIcon}
-					alt="AWS CloudFormation"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCloudTrailIcon}
-					alt="AWS CloudTrail"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCloudWatchIcon}
-					alt="AWS CloudWatch"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCodeArtifactIcon}
-					alt="AWS CodeArtifact"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCodeBuildIcon}
-					alt="AWS CodeBuild"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCodeDeployIcon}
-					alt="AWS CodeDeploy"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSCodePipelineIcon}
-					alt="AWS CodeDeploy"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSDynamoDBIcon}
-					alt="AWS DynamoDB"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSEC2Icon}
-					alt="AWS Elastic Compute Cloud"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSECRIcon}
-					alt="AWS Elastice Container Registry"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSECSIcon}
-					alt="AWS Elastic Container Service"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSECSFargateIcon}
-					alt="AWS ECS Fargate"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSIAMIcon}
-					alt="AWS Identity and Access Management"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSKMSIcon}
-					alt="AWS Key Management Service"
-					height="40"
-					width="40"
-				/>
-				<Image src={AWSLambdaIcon} alt="AWS Lambda" height="40" width="40" />
-				<Image
-					src={AWSLoadBalancerIcon}
-					alt="AWS Loab Balancer"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSRDSIcon}
-					alt="AWS Relational Database"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSSecretsManagerIcon}
-					alt="AWS Secrets Manager"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSSNSIcon}
-					alt="AWS Simple Notification Service"
-					height="40"
-					width="40"
-				/>
-				<Image
-					src={AWSS3Icon}
-					alt="AWS Simple Storage Service"
-					height="40"
-					width="40"
-				/>
+				<div>
+					<h1 className="cardTitle">Professional Experience 💻🖥️👨‍💻</h1>
+				</div>
+				<br />
+				<div className="card">
+					<h2>May 2022 - Oct 2022</h2>
+					<h1>
+						{experience1Position} @{" "}
+						<a className="link" href="https://www.autodesk.com.sg/">
+							Autodesk Asia (Singapore)
+						</a>
+					</h1>
+					<h2>{experience1CompanyMission}</h2>
+					<p>
+						{">"} {experience1Achievement1}
+					</p>
+					<p>
+						{">"} {experience1Achievement2}
+					</p>
+					<p>
+						{">"} {experience1Achievement3}
+					</p>
+					<p>
+						{">"} {experience1Achievement4}
+					</p>
+					<p>Technology Stack:</p>
+					<p>- Frontend: HTML5, CSS, JS</p>
+					<p>- Backend: Python, Flask, Slack API</p>
+					<p>- Database: PostgreSQL, AWS RDS, AWS DynamoDB</p>
+					<p>- Build: Docker, Jenkins</p>
+					<p>- Test: PyTest</p>
+					<p>- Deployment: AWS EC2, AWS ECS Fargate</p>
+					<p>- Network and Security: AWS Load Balancer, AWS Security Group</p>
+					<p>
+						- Infrastructure: AWS CloudFormation, AWS CodePipeline, AWS Simple
+						Notification Service
+					</p>
+					<p>Suite of Non-AWS Platforms and Services: </p>
+					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
+					<Image src={CssIcon} alt="CSS" height="40" width="40" />
+					<Image src={JSIcon} alt="JS" height="40" width="40" />
+					<Image src={PythonIcon} alt="Python" height="40" width="40" />
+					<Image src={FlaskIcon} alt="Flask" height="40" width="40" />
+					<Image src={SlackIcon} alt="Slack API" height="40" width="40" />
+					<Image src={PostgreSQLIcon} alt="PostgreSQL" height="40" width="40" />
+					<Image src={DockerIcon} alt="Docker" height="40" width="40" />
+					<Image src={JenkinsIcon} alt="Jenkins" height="40" width="40" />
+					<Image src={PyTestIcon} alt="PyTest" height="40" width="40" />
+					<p>Suite of AWS Platforms and Services: </p>
+					<Image
+						src={AWSIcon}
+						alt="Amazon Web Services"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSACMIcon}
+						alt="Amazon Certificate Manager"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCFNIcon}
+						alt="AWS CloudFormation"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCloudTrailIcon}
+						alt="AWS CloudTrail"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCloudWatchIcon}
+						alt="AWS CloudWatch"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCodeArtifactIcon}
+						alt="AWS CodeArtifact"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCodeBuildIcon}
+						alt="AWS CodeBuild"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCodeDeployIcon}
+						alt="AWS CodeDeploy"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSCodePipelineIcon}
+						alt="AWS CodeDeploy"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSDynamoDBIcon}
+						alt="AWS DynamoDB"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSEC2Icon}
+						alt="AWS Elastic Compute Cloud"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSECRIcon}
+						alt="AWS Elastice Container Registry"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSECSIcon}
+						alt="AWS Elastic Container Service"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSECSFargateIcon}
+						alt="AWS ECS Fargate"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSIAMIcon}
+						alt="AWS Identity and Access Management"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSKMSIcon}
+						alt="AWS Key Management Service"
+						height="40"
+						width="40"
+					/>
+					<Image src={AWSLambdaIcon} alt="AWS Lambda" height="40" width="40" />
+					<Image
+						src={AWSLoadBalancerIcon}
+						alt="AWS Loab Balancer"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSRDSIcon}
+						alt="AWS Relational Database"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSSecretsManagerIcon}
+						alt="AWS Secrets Manager"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSSNSIcon}
+						alt="AWS Simple Notification Service"
+						height="40"
+						width="40"
+					/>
+					<Image
+						src={AWSS3Icon}
+						alt="AWS Simple Storage Service"
+						height="40"
+						width="40"
+					/>
+				</div>
 			</div>
 		</Layout>
 	);
