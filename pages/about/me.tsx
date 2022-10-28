@@ -6,7 +6,7 @@ import Layout from "../../components/layout";
 
 export const aboutTitle = "About Me";
 export const aboutText1 =
-	"I am currently reading the 🎓 Bachelor of Computing in Information Systems with the intention of specialising into Digital Product and Platform Management and Intelligent Systems Solutioning.";
+	"I am currently reading the 🎓 Bachelor of Computing in Information Systems with the intention of specialising in Digital Product and Platform Management and Intelligent Systems Solutioning.";
 export const aboutText2 =
 	"An Enthusiastic, hard-working, curious, and quick learner with a passion to develop and implement solutions to solve real world problems.";
 export const academic = "Bachelor of Computing in Information Systems";

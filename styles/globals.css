@@ -38,6 +38,7 @@ main {
 .header {
 	padding: 0rem 10rem 0rem 10rem;
 	border-bottom: 1px solid #eaeaea;
+	background-color: #395d74;
 }
 .footer {
 	padding: 0rem 10rem 0rem 10rem;
