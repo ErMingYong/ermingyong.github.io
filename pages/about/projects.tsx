@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -43,107 +46,335 @@ export const project4GitHubLink1 = "https://github.com/NIL-99/portfolio";
 const Projects: NextPage = () => {
 	return (
 		<Layout>
-			<div className="card">
-				<div>
-					<h1 className="cardTitle">Projects 🧪📝🥼</h1>
-				</div>
+			<Card
+				sx={{
+					backgroundColor: "#395d74",
+					border: "none",
+					boxShadow: "none",
+					margin: "1rem 0rem 1rem 0rem",
+				}}
+			>
+				<Typography
+					variant="h1"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "3rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					Projects 🧪📝🥼
+				</Typography>
 				<br />
-				<div className="card">
-					<h2>{project1Duration}</h2>
-					<h1>
+				<Card
+					sx={{
+						backgroundColor: "#395d74",
+						border: "none",
+						boxShadow: "none",
+						margin: "1rem 0rem 1rem 0rem",
+					}}
+				>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						{project1Duration}
+					</Typography>
+					<Typography
+						variant="h2"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "2rem",
+							fontWeight: "bold",
+							lineHeight: "1.3",
+							maxWidth: "70rem",
+						}}
+					>
 						{project1Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
+						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
-						</a>
-					</h1>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {project1Achievement1}
-					</p>
-					<a className="link" href={project1GitHubLink1}>
-						{project1GitHubLink1}
-					</a>
-					<p>Technology Stack: ReactJS, HTML5, CSS, Firebase</p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						<Link className="link" href={project1GitHubLink1}>
+							{project1GitHubLink1}
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Technology Stack: ReactJS, HTML5, CSS, Firebase
+					</Typography>
 					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
 					<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
-				</div>
+				</Card>
 				<br />
-				<div className="card">
-					<h2>{project2Duration}</h2>
-					<h1>
+				<Card
+					sx={{
+						backgroundColor: "#395d74",
+						border: "none",
+						boxShadow: "none",
+						margin: "1rem 0rem 1rem 0rem",
+					}}
+				>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						{project2Duration}
+					</Typography>
+					<Typography
+						variant="h2"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "2rem",
+							fontWeight: "bold",
+							lineHeight: "1.3",
+							maxWidth: "70rem",
+						}}
+					>
 						{project2Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
+						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
-						</a>
-					</h1>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {project2Achievement1}
-					</p>
-					<a className="link" href={project2GitHubLink1}>
-						{project2GitHubLink1}
-					</a>
-					<p>Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish</p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						<Link className="link" href={project2GitHubLink1}>
+							{project2GitHubLink1}
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish
+					</Typography>
 					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
 					<Image src={JQueryIcon} alt="iQuery" height="40" width="40" />
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
-				</div>
+				</Card>
 				<br />
-				<div className="card">
-					<h2>{project3Duration}</h2>
-					<h1>
+				<Card
+					sx={{
+						backgroundColor: "#395d74",
+						border: "none",
+						boxShadow: "none",
+						margin: "1rem 0rem 1rem 0rem",
+					}}
+				>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						{project3Duration}
+					</Typography>
+					<Typography
+						variant="h2"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "2rem",
+							fontWeight: "bold",
+							lineHeight: "1.3",
+							maxWidth: "70rem",
+						}}
+					>
 						{project3Description} @{" "}
-						<a className="link" href="https://www.comp.nus.edu.sg/">
+						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
-						</a>
-					</h1>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {project3Achievement1}
-					</p>
-					<p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						Frontend:
-						<a className="link" href={project3GitHubLink1}>
+						<Link className="link" href={project3GitHubLink1}>
 							{project3GitHubLink1}
-						</a>
-					</p>
-					Backend:
-					<a className="link" href={project3GitHubLink2}>
-						{project3GitHubLink2}
-					</a>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Backend:
+						<Link className="link" href={project3GitHubLink2}>
+							{project3GitHubLink2}
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish, HTML5, CSS,
 						AngularJS
-					</p>
+					</Typography>
 					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
 					<Image src={JQueryIcon} alt="jQuery" height="40" width="40" />
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
 					<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
-				</div>
+				</Card>
 				<br />
-				<div className="card">
-					<h2>{project4Duration}</h2>
-					<h1>
+				<Card
+					sx={{
+						backgroundColor: "#395d74",
+						border: "none",
+						boxShadow: "none",
+						margin: "1rem 0rem 1rem 0rem",
+					}}
+				>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						{project4Duration}
+					</Typography>
+					<Typography
+						variant="h2"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "2rem",
+							fontWeight: "bold",
+							lineHeight: "1.3",
+							maxWidth: "70rem",
+						}}
+					>
 						{project4Description} @{" "}
-						<a className="link" href="/">
+						<Link className="link" href="/">
 							Myself
-						</a>
-					</h1>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} Frontend:
-						<a className="link" href={project4GitHubLink1}>
+						<Link className="link" href={project4GitHubLink1}>
 							{project4GitHubLink1}
-						</a>
-					</p>
-					<p>Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS</p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS
+					</Typography>
 					<Image src={NextJSIcon} alt="NextJS" height="40" width="40" />
 					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
 					<Image src={TypeScriptIcon} alt="TypeScript" height="40" width="40" />
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
-				</div>
-			</div>
+				</Card>
+			</Card>
 		</Layout>
 	);
 };

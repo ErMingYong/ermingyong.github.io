@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import Link from "next/link";
+import styles from "../styles/header.module.css";
 
 const drawerWidth = 240;
 const navItems = ["me", "skills", "experiences", "projects", "contact"];
@@ -30,12 +31,11 @@ export default function Header() {
 			<Typography
 				variant="h6"
 				sx={{
-					flexGrow: 1,
-					display: { xs: "none", sm: "block" },
+					my: 2,
 					fontFamily: "monospace",
 					fontWeight: "bold",
 					fontSize: "1.5rem",
-					marginLeft: "4rem",
+					color: "#000",
 				}}
 			>
 				MING YONG
@@ -44,8 +44,20 @@ export default function Header() {
 			<List>
 				{navItems.map((item) => (
 					<ListItem key={item} disablePadding>
-						<ListItemButton sx={{ textAlign: "center" }}>
-							<ListItemText primary={item} />
+						<ListItemButton
+							sx={{
+								textAlign: "center",
+								fontFamily: "monospace",
+								fontSize: "1.2rem",
+								color: "#000",
+							}}
+						>
+							<Link
+								className={styles.drawerItem}
+								href={"/about/" + String(item)}
+							>
+								{item === "me" ? "About" : item}
+							</Link>
 						</ListItemButton>
 					</ListItem>
 				))}
@@ -100,7 +112,10 @@ export default function Header() {
 								}}
 								className="navbar-items link"
 							>
-								<Link className="navbar-item" href={"/about/" + String(item)}>
+								<Link
+									className={styles.navbarItem}
+									href={"/about/" + String(item)}
+								>
 									{item === "me" ? "About" : item}
 								</Link>
 							</Button>
@@ -122,6 +137,7 @@ export default function Header() {
 							boxSizing: "border-box",
 							width: drawerWidth,
 						},
+						color: "#000",
 					}}
 				>
 					{drawer}

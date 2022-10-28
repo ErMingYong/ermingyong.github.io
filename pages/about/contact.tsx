@@ -1,4 +1,7 @@
 import type { NextPage } from "next";
+import Link from "next/link";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -15,29 +18,88 @@ export const location = "Singapore, Singapore";
 const Contact: NextPage = () => {
 	return (
 		<Layout>
-			<div className="card">
-				<h1 className="cardTitle">{contactTitle} 📲</h1>
+			<Card
+				sx={{
+					backgroundColor: "#395d74",
+					border: "none",
+					boxShadow: "none",
+					margin: "1rem 0rem 1rem 0rem",
+				}}
+			>
+				<Typography
+					variant="h1"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "3rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					{contactTitle} 📲
+				</Typography>
 				<br />
-				<p className="cardText contact">
+				<Typography
+					variant="h2"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
 					📩 {contactText1}
 					{emailAddress}
-				</p>
-				<p className="cardText contact">
-					🔗 {contactText2}
-					<a href="https://www.linkedin.com/in/er-ming-yong/">
-						<u>{linkedInLink}</u>
-					</a>
-				</p>
-				<p className="cardText contact">
-					👨‍💻 {contactText3}
-					{githubLink}
-				</p>
+				</Typography>
 				<br />
-				<p className="cardText contact">
+				<Typography
+					variant="h2"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					🔗 {contactText2}
+					<Link href="https://www.linkedin.com/in/er-ming-yong/">
+						<u>{linkedInLink}</u>
+					</Link>
+				</Typography>
+				<br />
+				<Typography
+					variant="h2"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					👨‍💻 {contactText3}
+					<Link href="https://github.com/NIL-99?tab=repositories">
+						<u>{githubLink}</u>
+					</Link>
+				</Typography>
+				<br />
+				<br />
+				<Typography
+					variant="h2"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
 					📍 {contactText4}
 					{location}
-				</p>
-			</div>
+				</Typography>
+			</Card>
 		</Layout>
 	);
 };

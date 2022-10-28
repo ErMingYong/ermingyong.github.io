@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -10,10 +12,23 @@ const About: NextPage = () => {
 	return (
 		<Layout>
 			<div className="empty-space"></div>
-			<div className="card">
+			<Card
+				sx={{ backgroundColor: "#395d74", border: "none", boxShadow: "none" }}
+			>
 				<h1 className="cardTitle">{introductionTitle} 👨‍💻</h1>
-				<p className="cardText">{introductionText}</p>
-			</div>
+				<br />
+				<Typography
+					variant="h3"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					{introductionText}
+				</Typography>
+			</Card>
 		</Layout>
 	);
 };

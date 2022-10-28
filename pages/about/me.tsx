@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -14,20 +16,41 @@ export const specialization2 = "Intelligent Systems Solutioning";
 const Me: NextPage = () => {
 	return (
 		<Layout>
-			<div>
+			<Card
+				sx={{ backgroundColor: "#395d74", border: "none", boxShadow: "none" }}
+			>
 				<h1 className="cardTitle">{aboutTitle} ❓</h1>
-				<p className="cardText">
+				<Typography
+					variant="h3"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
 					I am current reading 🎓{" "}
 					<b>
 						<u>{academic}</u>
 					</b>
-					, with the intention of specializing into {specialization1} and{" "}
-					{specialization2}
-				</p>
-				<p className="cardText">
-					<b>{aboutText2}</b>
-				</p>
-			</div>
+					, with the intention of specializing into{" "}
+					<b>
+						{specialization1} and {specialization2}
+					</b>
+				</Typography>
+				<br />
+				<Typography
+					variant="h3"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "2rem",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					{aboutText2}
+				</Typography>
+			</Card>
 		</Layout>
 	);
 };

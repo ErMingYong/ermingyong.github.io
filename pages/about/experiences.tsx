@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -54,45 +57,227 @@ const experience1Achievement4 =
 const Experiences: NextPage = () => {
 	return (
 		<Layout>
-			<div className="card">
-				<div>
-					<h1 className="cardTitle">Professional Experience 💻🖥️👨‍💻</h1>
-				</div>
+			<Card
+				sx={{
+					backgroundColor: "#395d74",
+					border: "none",
+					boxShadow: "none",
+					margin: "1rem 0rem 1rem 0rem",
+				}}
+			>
+				<Typography
+					variant="h1"
+					sx={{
+						fontFamily: "monospace",
+						fontSize: "3rem",
+						fontWeight: "bold",
+						lineHeight: "1.3",
+						maxWidth: "70rem",
+					}}
+				>
+					Professional Experience 💻🖥️👨‍💻
+				</Typography>
 				<br />
-				<div className="card">
-					<h2>May 2022 - Oct 2022</h2>
-					<h1>
+				<Card
+					sx={{
+						backgroundColor: "#395d74",
+						border: "none",
+						boxShadow: "none",
+						margin: "1rem 0rem 1rem 0rem",
+					}}
+				>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						May 2022 - Oct 2022
+					</Typography>
+					<Typography
+						variant="h2"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "2rem",
+							fontWeight: "bold",
+							lineHeight: "1.3",
+							maxWidth: "70rem",
+						}}
+					>
 						{experience1Position} @{" "}
-						<a className="link" href="https://www.autodesk.com.sg/">
+						<Link className="link" href="https://www.autodesk.com.sg/">
 							Autodesk Asia (Singapore)
-						</a>
-					</h1>
-					<h2>{experience1CompanyMission}</h2>
-					<p>
+						</Link>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1.3rem",
+							lineHeight: "2",
+							maxWidth: "70rem",
+						}}
+					>
+						{experience1CompanyMission}
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {experience1Achievement1}
-					</p>
-					<p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {experience1Achievement2}
-					</p>
-					<p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {experience1Achievement3}
-					</p>
-					<p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						{">"} {experience1Achievement4}
-					</p>
-					<p>Technology Stack:</p>
-					<p>- Frontend: HTML5, CSS, JS</p>
-					<p>- Backend: Python, Flask, Slack API</p>
-					<p>- Database: PostgreSQL, AWS RDS, AWS DynamoDB</p>
-					<p>- Build: Docker, Jenkins</p>
-					<p>- Test: PyTest</p>
-					<p>- Deployment: AWS EC2, AWS ECS Fargate</p>
-					<p>- Network and Security: AWS Load Balancer, AWS Security Group</p>
-					<p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Technology Stack:
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Frontend: HTML5, CSS, JS
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Backend: Python, Flask, Slack API
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Database: PostgreSQL, AWS RDS, AWS DynamoDB
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Build: Docker, Jenkins
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Test: PyTest
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Deployment: AWS EC2, AWS ECS Fargate
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						- Network and Security: AWS Load Balancer, AWS Security Group
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
 						- Infrastructure: AWS CloudFormation, AWS CodePipeline, AWS Simple
 						Notification Service
-					</p>
-					<p>Suite of Non-AWS Platforms and Services: </p>
+					</Typography>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Suite of Non-AWS Platforms and Services:{" "}
+					</Typography>
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
 					<Image src={JSIcon} alt="JS" height="40" width="40" />
@@ -103,7 +288,17 @@ const Experiences: NextPage = () => {
 					<Image src={DockerIcon} alt="Docker" height="40" width="40" />
 					<Image src={JenkinsIcon} alt="Jenkins" height="40" width="40" />
 					<Image src={PyTestIcon} alt="PyTest" height="40" width="40" />
-					<p>Suite of AWS Platforms and Services: </p>
+					<Typography
+						variant="h3"
+						sx={{
+							fontFamily: "monospace",
+							fontSize: "1rem",
+							lineHeight: "1.5",
+							maxWidth: "70rem",
+						}}
+					>
+						Suite of AWS Platforms and Services:{" "}
+					</Typography>
 					<Image
 						src={AWSIcon}
 						alt="Amazon Web Services"
@@ -231,8 +426,8 @@ const Experiences: NextPage = () => {
 						height="40"
 						width="40"
 					/>
-				</div>
-			</div>
+				</Card>
+			</Card>
 		</Layout>
 	);
 };
