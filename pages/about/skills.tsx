@@ -36,6 +36,8 @@ import FigmaIcon from "../../images/figma.svg";
 import LinuxIcon from "../../images/linux.svg";
 import UbuntuIcon from "../../images/ubuntu.svg";
 import GoogleAnalytics4Icon from "../../images/googleanalytics4.svg";
+import MaterialUIIcon from "../../images/material-ui.svg";
+import ReactBootstrapIcon from "../../images/react-bootstrap.svg";
 import AWSWebServicesIcon from "../../images/amazonwebservices.svg";
 import AWSACMIcon from "../../images/aws/awscertificatemanager.svg";
 import AWSCFNIcon from "../../images/aws/cloudformation.svg";
@@ -158,7 +160,7 @@ const Skills: NextPage = () => {
 						}}
 					>
 						{"> "} Jakarta EE, jQuery, AngularJS, ReactJS, NextJS, Flask,
-						PyTest, Bootstrap 5, ChartJS, Ionic
+						PyTest, Bootstrap 5, Material UI, ChartJS, Ionic
 					</Typography>
 					<Image
 						src={JakartaEEIcon}
@@ -170,6 +172,7 @@ const Skills: NextPage = () => {
 					<Image src={AngularJSIcon} alt="AngularJS" height={100} width={100} />
 					<Image src={ReactJSIcon} alt="ReactJS" height={100} width={100} />
 					<Image src={NextJSIcon} alt="NextJS" height={100} width={100} />
+					<Image src={IonicIcon} alt="Ionic" height={100} width={100} />
 					<Image src={FlaskIcon} alt="Flask" height={100} width={100} />
 					<Image src={PyTestIcon} alt="PyTest" height={100} width={100} />
 					<Image
@@ -178,8 +181,19 @@ const Skills: NextPage = () => {
 						height={100}
 						width={100}
 					/>
+					<Image
+						src={MaterialUIIcon}
+						alt="Material UI"
+						height={100}
+						width={100}
+					/>
+					<Image
+						src={ReactBootstrapIcon}
+						alt="React Bootstrap"
+						height={100}
+						width={100}
+					/>
 					<Image src={ChartJSIcon} alt="ChartJS" height={100} width={100} />
-					<Image src={IonicIcon} alt="Ionic" height={100} width={100} />
 				</Card>
 				<Card
 					sx={{

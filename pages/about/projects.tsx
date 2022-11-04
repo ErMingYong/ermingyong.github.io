@@ -16,6 +16,7 @@ import GlassfishIcon from "../../images/glassfish.svg";
 import AngularIcon from "../../images/angular.svg";
 import NextJSIcon from "../../images/nextjs.svg";
 import TypeScriptIcon from "../../images/typescript.svg";
+import MaterialUIIcon from "../../images/material-ui.svg";
 
 // copy and refactor for more details or experiences
 export const project1Duration = "May 2021 - Jul 2021";
@@ -366,13 +367,20 @@ const Projects: NextPage = () => {
 							maxWidth: "70rem",
 						}}
 					>
-						Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS
+						Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS, Material
+						UI
 					</Typography>
 					<Image src={NextJSIcon} alt="NextJS" height="40" width="40" />
 					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
 					<Image src={TypeScriptIcon} alt="TypeScript" height="40" width="40" />
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
+					<Image
+						src={MaterialUIIcon}
+						alt="Material UI"
+						height="40"
+						width="40"
+					/>
 				</Card>
 			</Card>
 		</Layout>
