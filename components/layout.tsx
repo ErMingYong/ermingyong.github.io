@@ -16,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				<link rel="icon" href="/my-icon.ico" type="image/x-icon" />
 				<meta name="description" content="Ming Yong's Description" />
 				<meta name="og:title" content={siteTitle} />
+				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</Head>
 			<Header />
 			<main>
