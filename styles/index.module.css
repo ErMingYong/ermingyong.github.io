@@ -6,10 +6,10 @@
 	margin: 1rem 0;
 }
 
-.introduction {
+/* .introduction {
 	font-size: 1.5rem;
 	line-height: 1.5;
-}
+} */
 
 .description {
 	font-size: 1.2rem;
@@ -20,11 +20,11 @@
 	border-radius: 9999px;
 }
 
-.container {
+/* .container {
 	max-width: 36rem;
 	padding: 4rem 1rem;
 	margin: 3rem auto 6rem;
-}
+} */
 
 .card {
 	display: flex;
@@ -36,4 +36,55 @@
 .link {
 	text-decoration: underline;
 	font-weight: bold;
+}
+
+/* BREAKLINE */
+
+.container {
+	margin-top: 5rem;
+	padding: 3rem;
+}
+
+.title {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.profilePic {
+	display: flex;
+	justify-content: center;
+}
+
+.introduction {
+	font-size: 3rem;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.button {
+	height: 50px;
+	font-size: 1rem;
+	margin: 0.3rem;
+	background-color: #6096B4;
+}
+
+@media (min-width: 600px) {
+	.container {
+		margin: 3rem;
+		padding: 3rem;
+	}
+
+	.column {
+		margin: 0.5rem;
+	}
+
+	.button {
+		margin: 1rem;
+	}
 }

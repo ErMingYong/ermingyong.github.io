@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Image from "next/image";
 import profilePic from "../public/profile.jpg";
+import Link from "next/link";
+import Button from "@mui/material/Button";
 
 export const siteTitle = "Welcome to MY Portfolio!";
 export const name = "Er Ming Yong";
@@ -18,31 +20,37 @@ export default function Home() {
 				<link rel="icon" href="/my-icon.ico" />
 			</Head>
 			<div className={styles.container}>
-				<div className={styles.card}>
+				<div className={styles.profilePic}>
 					<Image
 						priority
 						src={profilePic}
 						className={styles.borderCircle}
-						height={200}
-						width={200}
+						height={250}
+						width={250}
 						alt="Profile Picture"
 						placeholder="blur"
 					/>
-					<br />
 				</div>
-				<div className={styles.card}>
-					<h1 className={styles.name}>
-						<a className={styles.link} href="/about">
-							{name}
-						</a>
-					</h1>
-					<section className={styles.description}>
-						<p className={styles.introduction}>{selfIntroduction}</p>
-						<p>{selfDescription}</p>
-						<p>
-							Learn more about Me! {"->"} <a href="/about">&#128102;</a>
-						</p>
-					</section>
+				<br />
+				<div className={styles.column}>
+					<div className={styles.introduction}>
+						<Link href="/about">I'm Ming Yong</Link>
+					</div>
+				</div>
+				<br />
+				<div className={styles.column}>
+					{/* <Button variant="contained" href="/about" className={styles.button}>About Me</Button>&nbsp;
+					<Button variant="contained" href="https://www.linkedin.com/in/er-ming-yong/">LinkedIn</Button>&nbsp;
+					<Button variant="contained" href="https://github.com/ErMingYong?tab=repositories">GitHub</Button> */}
+					<button type="button" className={styles.button}>
+						<a href="/about">About Me</a>
+					</button>
+					<button type="button" className={styles.button}>
+						<a href="https://github.com/ErMingYong?tab=repositories">GitHub</a>
+					</button>
+					<button type="button" className={styles.button}>
+						<a href="https://www.linkedin.com/in/er-ming-yong/">LinkedIn</a>
+					</button>
 				</div>
 			</div>
 		</>
