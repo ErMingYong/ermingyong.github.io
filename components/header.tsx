@@ -7,14 +7,16 @@ import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Image from "next/image";
 
-import Link from "next/link";
 import styles from "../styles/header.module.css";
+
+import LinkedInIcon from "../images/linkedIn.svg";
+import GitHubIcon from "../images/github.svg";
 
 const drawerWidth = 240;
 const navItems = ["me", "skills", "experiences", "projects", "contact"];
@@ -52,15 +54,23 @@ export default function Header() {
 								color: "#000",
 							}}
 						>
-							<Link
+							<a
 								className={styles.drawerItem}
 								href={"/about/" + String(item)}
 							>
 								{item === "me" ? "About" : item}
-							</Link>
+							</a>
 						</ListItemButton>
 					</ListItem>
 				))}
+				<div className={styles.column}>
+					<Button href="/about/contact">
+						<Image src={GitHubIcon} alt="Github" height={50} width={50} />
+					</Button>
+					<Button>
+						<Image src={LinkedInIcon} alt="Linkedin" height={50} width={50} />
+					</Button>
+				</div>
 			</List>
 		</Box>
 	);
@@ -70,9 +80,9 @@ export default function Header() {
 			<AppBar
 				component="nav"
 				sx={{
-					background: "#395d74",
+					background: "#6096B4",
 					boxShadow: "none",
-					borderBottom: "1px solid #eaeaea",
+					borderBottom: "1.5px solid #eaeaea",
 				}}
 			>
 				<Toolbar>
@@ -84,7 +94,10 @@ export default function Header() {
 						sx={{ mr: 2, display: { sm: "none" } }}
 					>
 						<MenuIcon />
+						&nbsp;&nbsp;
+						<a href="/about" className={styles.drawerTitle}>Ming Yong</a>
 					</IconButton>
+
 					<Typography
 						variant="h6"
 						component="div"
@@ -97,7 +110,7 @@ export default function Header() {
 							marginLeft: "4rem",
 						}}
 					>
-						<Link href="/about">MING YONG</Link>
+						<a href="/about" className={styles.navbarItem}>MING YONG</a>
 					</Typography>
 					<Box
 						sx={{ display: { xs: "none", sm: "block" }, marginRight: "4rem" }}
@@ -110,14 +123,14 @@ export default function Header() {
 									fontFamily: "monospace",
 									fontSize: "1.3rem",
 								}}
-								className="navbar-items link"
+								className="navbar-items"
 							>
-								<Link
+								<a
 									className={styles.navbarItem}
 									href={"/about/" + String(item)}
 								>
 									{item === "me" ? "About" : item}
-								</Link>
+								</a>
 							</Button>
 						))}
 					</Box>

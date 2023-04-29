@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import Toolbar from "@mui/material/Toolbar";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -18,23 +17,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				<meta name="og:title" content={siteTitle} />
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</Head>
-			<Header />
 			<main>
+			<Header />
+			<br/>
 				<Box component="main" sx={{ p: 3 }}>
-					<Toolbar />
-					<Card
-						sx={{
-							background: "#395d74",
-							border: "none",
-							boxShadow: "none",
-							margin: "1rem 4rem",
-						}}
+					<Card className="card"
 					>
-						<h1>{children}</h1>
+						{children}
 					</Card>
 				</Box>
-			</main>
 			<Footer />
+			</main>
 		</div>
 	);
 }

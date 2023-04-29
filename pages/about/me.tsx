@@ -16,18 +16,12 @@ export const specialization2 = "Intelligent Systems Solutioning";
 const Me: NextPage = () => {
 	return (
 		<Layout>
-			<Card
-				sx={{ backgroundColor: "#395d74", border: "none", boxShadow: "none" }}
-			>
+			<Card className="card">
 				<h1 className="cardTitle">{aboutTitle} ❓</h1>
+				<br/>
 				<Typography
 					variant="h3"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
+					className="cardContent"
 				>
 					I am current reading 🎓{" "}
 					<b>
@@ -41,12 +35,7 @@ const Me: NextPage = () => {
 				<br />
 				<Typography
 					variant="h3"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
+					className="cardContent"
 				>
 					{aboutText2}
 				</Typography>

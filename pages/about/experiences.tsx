@@ -57,248 +57,83 @@ const experience1Achievement4 =
 const Experiences: NextPage = () => {
 	return (
 		<Layout>
-			<Card
-				sx={{
-					backgroundColor: "#395d74",
-					border: "none",
-					boxShadow: "none",
-					margin: "1rem 0rem 1rem 0rem",
-				}}
-			>
-				<Typography
-					variant="h1"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "3rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+			<Card className="card">
+				<h1 className="cardTitle">
 					Professional Experience 💻🖥️👨‍💻
-				</Typography>
+				</h1>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h3 className="innerCardContent">
 						May 2022 - Oct 2022
-					</Typography>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h2 className="cardContent">
 						{experience1Position} @{" "}
 						<Link className="link" href="https://www.autodesk.com.sg/">
 							Autodesk Asia (Singapore)
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "2",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<br/>
+					<h3 className="innerCardContent">
 						{experience1CompanyMission}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<br/>
+					<h3 className="innerCardContent">
 						{">"} {experience1Achievement1}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						{">"} {experience1Achievement2}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						{">"} {experience1Achievement3}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						{">"} {experience1Achievement4}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<br/>
+					<h3 className="innerCardContent">
 						Technology Stack:
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Frontend: HTML5, CSS, JS
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Backend: Python, Flask, Slack API
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Database: PostgreSQL, AWS RDS, AWS DynamoDB
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Build: Docker, Jenkins
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Test: PyTest
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Deployment: AWS EC2, AWS ECS Fargate
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Network and Security: AWS Load Balancer, AWS Security Group
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						- Infrastructure: AWS CloudFormation, AWS CodePipeline, AWS Simple
 						Notification Service
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Suite of Non-AWS Platforms and Services:{" "}
-					</Typography>
-					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
-					<Image src={CssIcon} alt="CSS" height="40" width="40" />
-					<Image src={JSIcon} alt="JS" height="40" width="40" />
-					<Image src={PythonIcon} alt="Python" height="40" width="40" />
-					<Image src={FlaskIcon} alt="Flask" height="40" width="40" />
-					<Image src={SlackIcon} alt="Slack API" height="40" width="40" />
-					<Image src={PostgreSQLIcon} alt="PostgreSQL" height="40" width="40" />
-					<Image src={DockerIcon} alt="Docker" height="40" width="40" />
-					<Image src={JenkinsIcon} alt="Jenkins" height="40" width="40" />
-					<Image src={PyTestIcon} alt="PyTest" height="40" width="40" />
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<Image src={Html5Icon} alt="HTML5" height={40} width={40} />
+					<Image src={CssIcon} alt="CSS" height={40} width={40} />
+					<Image src={JSIcon} alt="JS" height={40} width={40} />
+					<Image src={PythonIcon} alt="Python" height={40} width={40} />
+					<Image src={FlaskIcon} alt="Flask" height={40} width={40} />
+					<Image src={SlackIcon} alt="Slack API" height={40} width={40} />
+					<Image src={PostgreSQLIcon} alt="PostgreSQL" height={40} width={40} />
+					<Image src={DockerIcon} alt="Docker" height={40} width={40} />
+					<Image src={JenkinsIcon} alt="Jenkins" height={40} width={40} />
+					<Image src={PyTestIcon} alt="PyTest" height={40} width={40} />
+					<h3 className="innerCardContent">
 						Suite of AWS Platforms and Services:{" "}
-					</Typography>
+					</h3>
 					<Image
 						src={AWSIcon}
 						alt="Amazon Web Services"
@@ -395,7 +230,7 @@ const Experiences: NextPage = () => {
 						height="40"
 						width="40"
 					/>
-					<Image src={AWSLambdaIcon} alt="AWS Lambda" height="40" width="40" />
+					<Image src={AWSLambdaIcon} alt="AWS Lambda" height={40} width={40} />
 					<Image
 						src={AWSLoadBalancerIcon}
 						alt="AWS Loab Balancer"

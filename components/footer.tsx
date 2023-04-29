@@ -6,6 +6,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import styles from "../styles/footer.module.css";
+
 import Link from "next/link";
 
 export default function BottomAppBar() {
@@ -18,9 +20,9 @@ export default function BottomAppBar() {
 				sx={{
 					top: "auto",
 					bottom: 0,
-					background: "#395d74",
+					background: "#6096B4",
 					boxShadow: "none",
-					borderTop: "1px solid #eaeaea",
+					borderTop: "1.5px solid #eaeaea",
 				}}
 			>
 				<Toolbar>
@@ -35,37 +37,17 @@ export default function BottomAppBar() {
 							marginLeft: "4rem",
 						}}
 					>
-						<Link href="/about">MING YONG</Link>
+						{/* <a href="/about" className={styles.navbarItem}>MING YONG</a> */}
 					</Typography>
 					<Box
 						sx={{ display: { xs: "none", sm: "block" }, marginRight: "4rem" }}
 					>
-						<Button
-							key="GitHub"
-							sx={{
-								color: "#fff",
-								fontFamily: "monospace",
-								fontSize: "1.3rem",
-							}}
-							className="navbar-items link"
-						>
-							<Link href="https://github.com/NIL-99?tab=repositories">
-								GitHub
-							</Link>
-						</Button>
-						<Button
-							key="LinkedIn"
-							sx={{
-								color: "#fff",
-								fontFamily: "monospace",
-								fontSize: "1.3rem",
-							}}
-							className="navbar-items link"
-						>
-							<Link href="https://www.linkedin.com/in/er-ming-yong/">
-								LinkedIn
-							</Link>
-						</Button>
+						<a href="https://github.com/NIL-99?tab=repositories" className={styles.navbarItem}>
+							GitHub
+						</a>
+						<a href="https://www.linkedin.com/in/er-ming-yong/" className={styles.navbarItem}>
+							LinkedIn
+						</a>
 					</Box>
 				</Toolbar>
 			</AppBar>

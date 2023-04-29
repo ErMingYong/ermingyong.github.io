@@ -43,265 +43,97 @@ export const project4Description = "Developer, Personal Portfolio Website 📁";
 export const project4GitHubLink1 = "https://github.com/NIL-99/portfolio";
 
 // below method renders the output of the page
-// copy and refactor <div className="card"></div> component to place more details or experiences
+// copy and refactor <div className="innerCard"></div> component to place more details or experiences
 const Projects: NextPage = () => {
 	return (
 		<Layout>
-			<Card
-				sx={{
-					backgroundColor: "#395d74",
-					border: "none",
-					boxShadow: "none",
-					margin: "1rem 0rem 1rem 0rem",
-				}}
-			>
-				<Typography
-					variant="h1"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "3rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+			<Card className="card">
+				<h1 className="cardTitle">
 					Projects 🧪📝🥼
-				</Typography>
+				</h1>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h3 className="innerCardContent">
 						{project1Duration}
-					</Typography>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h2 className="cardContent">
 						{project1Description} @{" "}
 						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{">"} {project1Achievement1}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						<Link className="link" href={project1GitHubLink1}>
 							{project1GitHubLink1}
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Technology Stack: ReactJS, HTML5, CSS, Firebase
-					</Typography>
+					</h3>
 					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
 					<Image src={Html5Icon} alt="HTML5" height="40" width="40" />
 					<Image src={CssIcon} alt="CSS" height="40" width="40" />
 					<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
 				</Card>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h3 className="innerCardContent">
 						{project2Duration}
-					</Typography>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h2 className="cardContent">
 						{project2Description} @{" "}
 						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{">"} {project2Achievement1}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						<Link className="link" href={project2GitHubLink1}>
 							{project2GitHubLink1}
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish
-					</Typography>
+					</h3>
 					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
 					<Image src={JQueryIcon} alt="iQuery" height="40" width="40" />
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
 				</Card>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h3 className="innerCardContent">
 						{project3Duration}
-					</Typography>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h2 className="cardContent">
 						{project3Description} @{" "}
 						<Link className="link" href="https://www.comp.nus.edu.sg/">
 							National University of Singapore
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{">"} {project3Achievement1}
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Frontend:
 						<Link className="link" href={project3GitHubLink1}>
 							{project3GitHubLink1}
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Backend:
 						<Link className="link" href={project3GitHubLink2}>
 							{project3GitHubLink2}
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Technology Stack: Jakarta EE, JPA ORM, JPQL, GlassFish, HTML5, CSS,
 						AngularJS
-					</Typography>
+					</h3>
 					<Image src={JakartaEEIcon} alt="JakartaEE" height="40" width="40" />
 					<Image src={JQueryIcon} alt="jQuery" height="40" width="40" />
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
@@ -310,66 +142,26 @@ const Projects: NextPage = () => {
 					<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
 				</Card>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.3rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h3 className="innerCardContent">
 						{project4Duration}
-					</Typography>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h2 className="cardContent">
 						{project4Description} @{" "}
 						<Link className="link" href="/">
 							Myself
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{">"} Frontend:
 						<Link className="link" href={project4GitHubLink1}>
 							{project4GitHubLink1}
 						</Link>
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1rem",
-							lineHeight: "1.5",
-							maxWidth: "70rem",
-						}}
-					>
+					</h3>
+					<h3 className="innerCardContent">
 						Technology Stack: ReactJS, NextJS, TypeScript, HTML5, CSS, Material
 						UI
-					</Typography>
+					</h3>
 					<Image src={NextJSIcon} alt="NextJS" height="40" width="40" />
 					<Image src={ReactJSIcon} alt="ReactJS" height="40" width="40" />
 					<Image src={TypeScriptIcon} alt="TypeScript" height="40" width="40" />

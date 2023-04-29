@@ -4,6 +4,7 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
+import styles from "../../styles/skills.module.css";
 
 import JavaIcon from "../../images/java.svg";
 import PythonIcon from "../../images/python.svg";
@@ -62,428 +63,273 @@ import AWSSNSIcon from "../../images/aws/simplenotificationservice.svg";
 import AWSS3Icon from "../../images/aws/simplestorageservice.svg";
 
 // below method renders the output of the page
-// copy and refactor <div className="card"></div> component to place more details or experiences
+// copy and refactor <div className="innerCard"></div> component to place more details or experiences
 const Skills: NextPage = () => {
 	return (
 		<Layout>
-			<Card
-				sx={{
-					backgroundColor: "#395d74",
-					border: "none",
-					boxShadow: "none",
-					margin: "1rem 0rem 1rem 0rem",
-				}}
-			>
-				<Typography
-					variant="h1"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "3rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+			<Card className="card">
+				<h1 className="cardTitle">
 					My Skills 📖🧠👨‍💻
-				</Typography>
+				</h1>
 				<br />
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Languages
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.2rem",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{"> "} Java, Python, JavaScript, TypeScript, HTMl, CSS
-					</Typography>
-					<Image src={JavaIcon} alt="Java" height={100} width={100} />
-					<Image src={PythonIcon} alt="Python" height={100} width={100} />
-					<Image src={JSIcon} alt="JavaScript" height={100} width={100} />
+					</h3>
+					<Image src={JavaIcon} alt="Java" height={50} width={50}/>
+					<Image src={PythonIcon} alt="Python" height={50} width={50} />
+					<Image src={JSIcon} alt="JavaScript" height={50} width={50} />
 					<Image
-						src={TypeScriptIcon}
-						alt="TypeScript"
-						height={100}
-						width={100}
+						src={TypeScriptIcon} alt="TypeScript" height={50} width={50}
 					/>
-					<Image src={Html5Icon} alt="HTML5" height={100} width={100} />
-					<Image src={CssIcon} alt="Css" height={100} width={100} />
+					<Image src={Html5Icon} alt="HTML5" height={50} width={50} />
+					<Image src={CssIcon} alt="Css" height={50} width={50} />
 				</Card>
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Frameworks
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.2rem",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{"> "} Jakarta EE, jQuery, AngularJS, ReactJS, NextJS, Flask,
 						PyTest, Bootstrap 5, Material UI, ChartJS, Ionic
-					</Typography>
+					</h3>
 					<Image
 						src={JakartaEEIcon}
 						alt="Jakarta EE"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
-					<Image src={JQueryIcon} alt="jQuery" height={100} width={100} />
-					<Image src={AngularJSIcon} alt="AngularJS" height={100} width={100} />
-					<Image src={ReactJSIcon} alt="ReactJS" height={100} width={100} />
-					<Image src={NextJSIcon} alt="NextJS" height={100} width={100} />
-					<Image src={IonicIcon} alt="Ionic" height={100} width={100} />
-					<Image src={FlaskIcon} alt="Flask" height={100} width={100} />
-					<Image src={PyTestIcon} alt="PyTest" height={100} width={100} />
+					<Image src={JQueryIcon} alt="jQuery" height={50} width={50} />
+					<Image src={AngularJSIcon} alt="AngularJS" height={50} width={50} />
+					<Image src={ReactJSIcon} alt="ReactJS" height={50} width={50} />
+					<Image src={NextJSIcon} alt="NextJS" height={50} width={50} />
+					<Image src={IonicIcon} alt="Ionic" height={50} width={50} />
+					<Image src={FlaskIcon} alt="Flask" height={50} width={50} />
+					<Image src={PyTestIcon} alt="PyTest" height={50} width={50} />
 					<Image
 						src={Bootstrap5Icon}
 						alt="Bootstrap 5"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={MaterialUIIcon}
 						alt="Material UI"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={ReactBootstrapIcon}
 						alt="React Bootstrap"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
-					<Image src={ChartJSIcon} alt="ChartJS" height={100} width={100} />
+					<Image src={ChartJSIcon} alt="ChartJS" height={50} width={50} />
 				</Card>
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Database
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.2rem",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{"> "} MySQL, PostgreSQL, AWS DynamoDB, AWS RDS
-					</Typography>
-					<Image src={MySQLIcon} alt="MySQL" height={100} width={100} />
+					</h3>
+					<Image src={MySQLIcon} alt="MySQL" height={50} width={50} />
 					<Image
 						src={PostgreSQLIcon}
 						alt="PostgreSQL"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSDynamoDBIcon}
 						alt="AWS DynamoDB"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSRDSIcon}
 						alt="AWS Relational Database"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 				</Card>
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Platforms and Services
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.2rem",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{"> "} AWS, Docker, Jenkins, Firebase, Postman, Slack, GlassFish
-					</Typography>
+					</h3>
 					<Image
 						src={AWSIcon}
 						alt="Amazon Web Services"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
-					<Image src={DockerIcon} alt="Docker" height={100} width={100} />
-					<Image src={JenkinsIcon} alt="Jenkins" height={100} width={100} />
-					<Image src={FirebaseIcon} alt="Firebase" height={100} width={100} />
-					<Image src={PostmanIcon} alt="Postman" height={100} width={100} />
-					<Image src={SlackIcon} alt="Slack" height={100} width={100} />
-					<Image src={GlassfishIcon} alt="Docker" height={100} width={100} />
+					<Image src={DockerIcon} alt="Docker" height={50} width={50} />
+					<Image src={JenkinsIcon} alt="Jenkins" height={50} width={50} />
+					<Image src={FirebaseIcon} alt="Firebase" height={50} width={50} />
+					<Image src={PostmanIcon} alt="Postman" height={50} width={50} />
+					<Image src={SlackIcon} alt="Slack" height={50} width={50} />
+					<Image src={GlassfishIcon} alt="Docker" height={50} width={50} />
 				</Card>
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Tools
-					</Typography>
-					<Typography
-						variant="h3"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "1.2rem",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+					</h2>
+					<h3 className="innerCardContent">
 						{"> "} Git, GitHub, Figma, Linux, Ubuntu, Google Analytics
-					</Typography>
-					<Image src={GitIcon} alt="Git" height={100} width={100} />
-					<Image src={GitHubIcon} alt="Docker" height={100} width={100} />
-					<Image src={FigmaIcon} alt="Figma" height={100} width={100} />
-					<Image src={LinuxIcon} alt="Linux" height={100} width={100} />
-					<Image src={UbuntuIcon} alt="Ubuntu" height={100} width={100} />
+					</h3>
+					<Image src={GitIcon} alt="Git" height={50} width={50} />
+					<Image src={GitHubIcon} alt="Docker" height={50} width={50} />
+					<Image src={FigmaIcon} alt="Figma" height={50} width={50} />
+					<Image src={LinuxIcon} alt="Linux" height={50} width={50} />
+					<Image src={UbuntuIcon} alt="Ubuntu" height={50} width={50} />
 					<Image
 						src={GoogleAnalytics4Icon}
 						alt="Google Analytics"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 				</Card>
-				<Card
-					sx={{
-						backgroundColor: "#395d74",
-						border: "none",
-						boxShadow: "none",
-						margin: "1rem 0rem 1rem 0rem",
-					}}
-				>
-					<Typography
-						variant="h2"
-						sx={{
-							fontFamily: "monospace",
-							fontSize: "2.3rem",
-							fontWeight: "bold",
-							lineHeight: "1.3",
-							maxWidth: "70rem",
-						}}
-					>
+				<Card className="innerCard">
+					<h2 className="cardContent">
 						Suite of AWS platforms and Services
-					</Typography>
+					</h2>
 					<Image
 						src={AWSWebServicesIcon}
 						alt="Amazon Web Services"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSS3Icon}
 						alt="AWS Simple Storage Service"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSLoadBalancerIcon}
 						alt="AWS Loab Balancer"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSLambdaIcon}
 						alt="AWS Lambda"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSEC2Icon}
 						alt="AWS Elastic Compute Cloud"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSECRIcon}
 						alt="AWS Elastice Container Registry"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSECSIcon}
 						alt="AWS Elastic Container Service"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSECSFargateIcon}
 						alt="AWS ECS Fargate"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCodeArtifactIcon}
 						alt="AWS CodeArtifact"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCodeBuildIcon}
 						alt="AWS CodeBuild"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCodeDeployIcon}
 						alt="AWS CodeDeploy"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCodePipelineIcon}
 						alt="AWS CodeDeploy"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSDynamoDBIcon}
 						alt="AWS DynamoDB"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSRDSIcon}
 						alt="AWS Relational Database"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCloudWatchIcon}
 						alt="AWS CloudWatch"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCFNIcon}
 						alt="AWS CloudFormation"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSCloudTrailIcon}
 						alt="AWS CloudTrail"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSSNSIcon}
 						alt="AWS Simple Notification Service"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSIAMIcon}
 						alt="AWS Identity and Access Management"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSACMIcon}
 						alt="Amazon Certificate Manager"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSKMSIcon}
 						alt="AWS Key Management Service"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 					<Image
 						src={AWSSecretsManagerIcon}
 						alt="AWS Secrets Manager"
-						height={100}
-						width={100}
+						height={50}
+						width={50}
 					/>
 				</Card>
 			</Card>

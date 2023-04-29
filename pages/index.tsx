@@ -34,7 +34,7 @@ export default function Home() {
 				<br />
 				<div className={styles.column}>
 					<div className={styles.introduction}>
-						<Link href="/about">I'm Ming Yong</Link>
+						<a href="/about" className={styles.link}>I'm Ming Yong</a>
 					</div>
 				</div>
 				<br />
@@ -43,13 +43,13 @@ export default function Home() {
 					<Button variant="contained" href="https://www.linkedin.com/in/er-ming-yong/">LinkedIn</Button>&nbsp;
 					<Button variant="contained" href="https://github.com/ErMingYong?tab=repositories">GitHub</Button> */}
 					<button type="button" className={styles.button}>
-						<a href="/about">About Me</a>
+						<a href="/about" className={styles.link}>About Me</a>
 					</button>
 					<button type="button" className={styles.button}>
-						<a href="https://github.com/ErMingYong?tab=repositories">GitHub</a>
+						<a href="https://github.com/ErMingYong?tab=repositories" className={styles.link}>GitHub</a>
 					</button>
 					<button type="button" className={styles.button}>
-						<a href="https://www.linkedin.com/in/er-ming-yong/">LinkedIn</a>
+						<a href="https://www.linkedin.com/in/er-ming-yong/" className={styles.link}>LinkedIn</a>
 					</button>
 				</div>
 			</div>

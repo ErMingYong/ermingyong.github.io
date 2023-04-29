@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
+import h3 from "@mui/material/Typography";
 
 import Layout from "../../components/layout";
 
@@ -18,87 +18,35 @@ export const location = "Singapore, Singapore";
 const Contact: NextPage = () => {
 	return (
 		<Layout>
-			<Card
-				sx={{
-					backgroundColor: "#395d74",
-					border: "none",
-					boxShadow: "none",
-					margin: "1rem 0rem 1rem 0rem",
-				}}
-			>
-				<Typography
-					variant="h1"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "3rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+			<Card className="card">
+				<h1 className="cardTitle">
 					{contactTitle} 📲
-				</Typography>
+				</h1>
 				<br />
-				<Typography
-					variant="h2"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+				<h3 className="innerCardContent">
 					📩 {contactText1}
 					{emailAddress}
-				</Typography>
+				</h3>
 				<br />
-				<Typography
-					variant="h2"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+				<h3 className="innerCardContent">
 					🔗 {contactText2}
 					<Link href="https://www.linkedin.com/in/er-ming-yong/">
 						<u>{linkedInLink}</u>
 					</Link>
-				</Typography>
+				</h3>
 				<br />
-				<Typography
-					variant="h2"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+				<h3 className="innerCardContent">
 					👨‍💻 {contactText3}
 					<Link href="https://github.com/NIL-99?tab=repositories">
 						<u>{githubLink}</u>
 					</Link>
-				</Typography>
+				</h3>
 				<br />
 				<br />
-				<Typography
-					variant="h2"
-					sx={{
-						fontFamily: "monospace",
-						fontSize: "2rem",
-						fontWeight: "bold",
-						lineHeight: "1.3",
-						maxWidth: "70rem",
-					}}
-				>
+				<h3 className="innerCardContent">
 					📍 {contactText4}
 					{location}
-				</Typography>
+				</h3>
 			</Card>
 		</Layout>
 	);

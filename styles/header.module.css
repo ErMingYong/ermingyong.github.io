@@ -1,7 +1,22 @@
 .navbarItem {
-	color: white;
+	color: white
+}
+
+.navbarItem:hover {
+	transform: scale(1.5);
 }
 
 .drawerItem {
 	color: black;
+}
+
+.drawerTitle {
+	font-family: monospace;
+	color: white;
+	font-weight: bold;
+}
+
+.column {
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
 }
