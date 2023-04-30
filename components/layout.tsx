@@ -18,15 +18,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</Head>
 			<main>
-			<Header />
-			<br/>
-				<Box component="main" sx={{ p: 3 }}>
-					<Card className="card"
+				<Header />
+				<br />
+				<Box component="main" sx={{ p: 3 }} style={{ backgroundColor: "#93BFCF" }}>
+					<Card className="card" style={{ backgroundColor: "#93BFCF" }}
 					>
 						{children}
 					</Card>
 				</Box>
-			<Footer />
+				<Footer />
 			</main>
 		</div>
 	);

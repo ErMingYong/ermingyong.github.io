@@ -14,7 +14,7 @@ const About: NextPage = () => {
 			<Card className="card">
 				<h1 className="cardTitle">{introductionTitle} 👨‍💻</h1>
 				<br />
-				<Typography className="cardContent">{introductionText}</Typography>
+				<h2 className="cardContent">{introductionText}</h2>
 			</Card>
 		</Layout>
 	);

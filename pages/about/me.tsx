@@ -19,10 +19,7 @@ const Me: NextPage = () => {
 			<Card className="card">
 				<h1 className="cardTitle">{aboutTitle} ❓</h1>
 				<br/>
-				<Typography
-					variant="h3"
-					className="cardContent"
-				>
+				<h2 className="cardContent" >
 					I am current reading 🎓{" "}
 					<b>
 						<u>{academic}</u>
@@ -31,14 +28,11 @@ const Me: NextPage = () => {
 					<b>
 						{specialization1} and {specialization2}
 					</b>
-				</Typography>
+				</h2>
 				<br />
-				<Typography
-					variant="h3"
-					className="cardContent"
-				>
+				<h2 className="cardContent" >
 					{aboutText2}
-				</Typography>
+				</h2>
 			</Card>
 		</Layout>
 	);
