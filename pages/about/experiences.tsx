@@ -57,7 +57,7 @@ const experience1Achievement4 =
 const Experiences: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					Professional Experience 💻🖥️👨‍💻
 				</h1>
@@ -262,7 +262,7 @@ const Experiences: NextPage = () => {
 						width="40"
 					/>
 				</Card>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };

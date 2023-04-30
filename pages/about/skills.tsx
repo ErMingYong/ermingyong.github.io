@@ -67,7 +67,7 @@ import AWSS3Icon from "../../images/aws/simplestorageservice.svg";
 const Skills: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					My Skills 📖🧠👨‍💻
 				</h1>
@@ -332,7 +332,7 @@ const Skills: NextPage = () => {
 						width={50}
 					/>
 				</Card>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };

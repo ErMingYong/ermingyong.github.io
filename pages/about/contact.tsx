@@ -18,7 +18,7 @@ export const location = "Singapore, Singapore";
 const Contact: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					{contactTitle} 📲
 				</h1>
@@ -47,7 +47,7 @@ const Contact: NextPage = () => {
 					📍 {contactText4}
 					{location}
 				</h3>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };

@@ -47,7 +47,7 @@ export const project4GitHubLink1 = "https://github.com/NIL-99/portfolio";
 const Projects: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					Projects 🧪📝🥼
 				</h1>
@@ -174,7 +174,7 @@ const Projects: NextPage = () => {
 						width="40"
 					/>
 				</Card>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };

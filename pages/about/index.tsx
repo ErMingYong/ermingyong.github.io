@@ -11,11 +11,11 @@ export const introductionText =
 const About: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">{introductionTitle} 👨‍💻</h1>
 				<br />
 				<h2 className="cardContent">{introductionText}</h2>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };

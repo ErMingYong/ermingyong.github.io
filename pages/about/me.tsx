@@ -16,7 +16,7 @@ export const specialization2 = "Intelligent Systems Solutioning";
 const Me: NextPage = () => {
 	return (
 		<Layout>
-			<Card className="card">
+			{/* <Card className="card"> */}
 				<h1 className="cardTitle">{aboutTitle} ❓</h1>
 				<br/>
 				<h2 className="cardContent" >
@@ -33,7 +33,7 @@ const Me: NextPage = () => {
 				<h2 className="cardContent" >
 					{aboutText2}
 				</h2>
-			</Card>
+			{/* </Card> */}
 		</Layout>
 	);
 };
