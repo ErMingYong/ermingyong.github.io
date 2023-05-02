@@ -47,12 +47,11 @@ export const project4GitHubLink1 = "https://github.com/NIL-99/portfolio";
 const Projects: NextPage = () => {
 	return (
 		<Layout>
-			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					Projects 🧪📝🥼
 				</h1>
 				<br />
-				<Card className="innerCard">
+				<Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}>
 					<h3 className="innerCardContent">
 						{project1Duration}
 					</h3>
@@ -79,7 +78,7 @@ const Projects: NextPage = () => {
 					<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
 				</Card>
 				<br />
-				<Card className="innerCard">
+				<Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}>
 					<h3 className="innerCardContent">
 						{project2Duration}
 					</h3>
@@ -105,7 +104,7 @@ const Projects: NextPage = () => {
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
 				</Card>
 				<br />
-				<Card className="innerCard">
+				<Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}>
 					<h3 className="innerCardContent">
 						{project3Duration}
 					</h3>
@@ -142,7 +141,7 @@ const Projects: NextPage = () => {
 					<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
 				</Card>
 				<br />
-				<Card className="innerCard">
+				<Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}>
 					<h3 className="innerCardContent">
 						{project4Duration}
 					</h3>
@@ -174,7 +173,6 @@ const Projects: NextPage = () => {
 						width="40"
 					/>
 				</Card>
-			{/* </Card> */}
 		</Layout>
 	);
 };

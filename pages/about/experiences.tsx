@@ -57,12 +57,11 @@ const experience1Achievement4 =
 const Experiences: NextPage = () => {
 	return (
 		<Layout>
-			{/* <Card className="card"> */}
 				<h1 className="cardTitle">
 					Professional Experience 💻🖥️👨‍💻
 				</h1>
 				<br />
-				<Card className="innerCard">
+				<Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}>
 					<h3 className="innerCardContent">
 						May 2022 - Oct 2022
 					</h3>
@@ -262,7 +261,6 @@ const Experiences: NextPage = () => {
 						width="40"
 					/>
 				</Card>
-			{/* </Card> */}
 		</Layout>
 	);
 };
