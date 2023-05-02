@@ -51,8 +51,7 @@ const Projects: NextPage = () => {
 					Projects 🧪📝🥼
 				</h1>
 				<br />
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h3 className="innerCardContent">
 						{project1Duration}
 					</h3>
@@ -79,8 +78,7 @@ const Projects: NextPage = () => {
 					<Image src={FirebaseIcon} alt="Firebase" height="40" width="40" />
 				</Card>
 				<br />
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h3 className="innerCardContent">
 						{project2Duration}
 					</h3>
@@ -106,8 +104,7 @@ const Projects: NextPage = () => {
 					<Image src={GlassfishIcon} alt="Glassfish" height="40" width="40" />
 				</Card>
 				<br />
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h3 className="innerCardContent">
 						{project3Duration}
 					</h3>
@@ -144,8 +141,7 @@ const Projects: NextPage = () => {
 					<Image src={AngularIcon} alt="AngularJS" height="40" width="40" />
 				</Card>
 				<br />
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h3 className="innerCardContent">
 						{project4Duration}
 					</h3>

@@ -71,8 +71,7 @@ const Skills: NextPage = () => {
 					My Skills 📖🧠👨‍💻
 				</h1>
 				<br />
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Languages
 					</h2>
@@ -88,8 +87,7 @@ const Skills: NextPage = () => {
 					<Image src={Html5Icon} alt="HTML5" height={50} width={50} />
 					<Image src={CssIcon} alt="Css" height={50} width={50} />
 				</Card>
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Frameworks
 					</h2>
@@ -130,8 +128,7 @@ const Skills: NextPage = () => {
 					/>
 					<Image src={ChartJSIcon} alt="ChartJS" height={50} width={50} />
 				</Card>
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Database
 					</h2>
@@ -158,8 +155,7 @@ const Skills: NextPage = () => {
 						width={50}
 					/>
 				</Card>
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Platforms and Services
 					</h2>
@@ -179,8 +175,7 @@ const Skills: NextPage = () => {
 					<Image src={SlackIcon} alt="Slack" height={50} width={50} />
 					<Image src={GlassfishIcon} alt="Docker" height={50} width={50} />
 				</Card>
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Tools
 					</h2>
@@ -199,8 +194,7 @@ const Skills: NextPage = () => {
 						width={50}
 					/>
 				</Card>
-				{/* <Card className="innerCard" style={{ backgroundColor: "#93BFCF"}}> */}
-				<Card>
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
 					<h2 className="cardContent">
 						Suite of AWS platforms and Services
 					</h2>
