@@ -22,7 +22,8 @@ body {
 	background-color: #93BFCF;
 }
 
-.card {
+/* CSS styling for MUI components through global.css is useless */
+/* .card {
 	background-color: #93BFCF;
 	border: none;
 	box-shadow: none;
@@ -35,6 +36,14 @@ body {
 	border: none;
 	box-shadow: none;
 	padding-left: 0rem;
+	padding-bottom: 3rem;
+} */
+
+.MuiCard-root {
+	background-color: #93BFCF;
+	border: none;
+	box-shadow: none;
+	padding-left: 1rem;
 	padding-bottom: 3rem;
 }
 

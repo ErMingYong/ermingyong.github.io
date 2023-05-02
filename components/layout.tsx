@@ -21,8 +21,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				<Header />
 				<br />
 				<Box component="main" sx={{ p: 3 }} style={{ backgroundColor: "#93BFCF" }}>
-					<Card className="card" style={{ backgroundColor: "#93BFCF" }}
-					>
+					{/* <Card className="card" style={{ backgroundColor: "#93BFCF" }} > */}
+					<Card>
 						{children}
 					</Card>
 				</Box>
