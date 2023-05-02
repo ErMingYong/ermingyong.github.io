@@ -61,7 +61,7 @@ const Experiences: NextPage = () => {
 					Professional Experience 💻🖥️👨‍💻
 				</h1>
 				<br />
-				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "1rem", paddingBottom: "3rem"}} >
+				<Card className="card" style={{ backgroundColor: "#93BFCF", border: "none", boxShadow: "none", paddingLeft: "0rem", paddingBottom: "3rem"}} >
 					<h3 className="innerCardContent">
 						May 2022 - Oct 2022
 					</h3>
